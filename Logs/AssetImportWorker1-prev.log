@@ -1,76 +1,752 @@
 Using pre-set license
-Built from '2020.3/release' branch; Version is '2020.3.15f2 (6cf78cb77498) revision 7141260'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1266; Version 2009; 64bit' Language: 'en' Physical Memory: 8023 MB
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 6100 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
- COMMAND LINE ARGUMENTS:
-D:\Program Files\Unity\2020.3.15f2\Editor\Unity.exe
+COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-D:/Documents/Kampus (Local)/SEM 7/PemGame/Unity Projects/PemGame
+D:/Documents/Kuliah/Sem 7/Pemgame/Unity Projects/PemGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63440
-Successfully changed project path to: D:/Documents/Kampus (Local)/SEM 7/PemGame/Unity Projects/PemGame
-D:/Documents/Kampus (Local)/SEM 7/PemGame/Unity Projects/PemGame
+58527
+Successfully changed project path to: D:/Documents/Kuliah/Sem 7/Pemgame/Unity Projects/PemGame
+D:/Documents/Kuliah/Sem 7/Pemgame/Unity Projects/PemGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 200.38 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.15f2 (6cf78cb77498)
-[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.15f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Documents/Kampus (Local)/SEM 7/PemGame/Unity Projects/PemGame/Assets
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Documents/Kuliah/Sem 7/Pemgame/Unity Projects/PemGame/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon (TM) 530 (ID=0x6900)
+    Renderer: Radeon RX 560 Series (ID=0x67ef)
     Vendor:   
-    VRAM:     2038 MB
-    Driver:   27.20.21003.8013
+    VRAM:     2027 MB
+    Driver:   27.20.22025.1006
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
 Initialize mono
-Mono path[0] = 'D:/Program Files/Unity/2020.3.15f2/Editor/Data/Managed'
-Mono path[1] = 'D:/Program Files/Unity/2020.3.15f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Program Files/Unity/2020.3.15f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56176
+Mono path[0] = 'D:/Program Files/Unity/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Program Files/Unity/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Program Files/Unity/2020.3.15f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.042125 seconds.
+Register platform support module: D:/Program Files/Unity/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001073 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 224.90 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 58.36 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in 19.424 seconds
+- Completed reload, in  1.765 seconds
 Domain Reload Profiling:
-	ReloadAssembly (19425ms)
-		BeginReloadAssembly (233ms)
+	ReloadAssembly (1766ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1676ms)
-			LoadAssemblies (248ms)
+		EndReloadAssembly (554ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (506ms)
+			SetupTypeCache (222ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (108ms)
-			SetupLoadedEditorAssemblies (869ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (216ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (195ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (225ms)
-				BeforeProcessingInitializeOnLoad (28ms)
-				ProcessInitializeOnLoadAttributes (283ms)
-				ProcessInitializeOnLoadMethodAttributes (138ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.506795 seconds.
+Registered in 0.002139 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  3.224 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3225ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (2931ms)
+			LoadAssemblies (1695ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (490ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (479ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1773 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.9 MB.
+System memory in use after: 130.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2228.
+Total: 3.687100 ms (FindLiveObjects: 0.250200 ms CreateObjectMapping: 0.156900 ms MarkObjects: 2.937200 ms  DeleteObjects: 0.341700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal/Internal_Enviro_LW.prefab
+  artifactKey: Guid(870fb2241eea3504981794f9ad7ab7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal/Internal_Enviro_LW.prefab using Guid(870fb2241eea3504981794f9ad7ab7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2774fa5be3b3168f723c3f7314b923e') in 0.299100 seconds 
+  Import took 0.305167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal/Internal_Enviro_LW_MOBILE.prefab
+  artifactKey: Guid(349caba85d66e6544a255352a44c0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal/Internal_Enviro_LW_MOBILE.prefab using Guid(349caba85d66e6544a255352a44c0392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3761cb3cd26c7100557e8502b808f3af') in 0.077131 seconds 
+  Import took 0.082469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.137312 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite
+  artifactKey: Guid(2558c8a3304421c4a8f2ba450cba532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite using Guid(2558c8a3304421c4a8f2ba450cba532a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160084fc456b4fe0aa70e9bebca1e8f8') in 0.006742 seconds 
+  Import took 0.031302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.746915 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs
+  artifactKey: Guid(73e9054757d5df7488faefa0310fa19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs using Guid(73e9054757d5df7488faefa0310fa19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2fb3604ad676161d0daffecbc0a307c') in 0.011604 seconds 
+  Import took 0.057528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.124807 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal
+  artifactKey: Guid(cbee50d0954a1094ba9d73bc5cdf8063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Internal using Guid(cbee50d0954a1094ba9d73bc5cdf8063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7285d620975e2016dd943a28ad0cfc') in 0.012012 seconds 
+  Import took 0.059707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.032525 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects
+  artifactKey: Guid(3b03c34058d75724ba4ebd1719270726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects using Guid(3b03c34058d75724ba4ebd1719270726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170ebb974332256d882349608fd8dd0e') in 0.011353 seconds 
+  Import took 0.061797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036984 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Heave Snow LQ.prefab
+  artifactKey: Guid(5ed4ce1f9abfa944fb0462b08c373c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Heave Snow LQ.prefab using Guid(5ed4ce1f9abfa944fb0462b08c373c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e574fe8c0db13b2a919dd1ba9369d0') in 0.090342 seconds 
+  Import took 0.111584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Near Snow LQ.prefab
+  artifactKey: Guid(d7199e3069614314880abb4328c0c665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Near Snow LQ.prefab using Guid(d7199e3069614314880abb4328c0c665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5258382ad0d253a1cb0b0ccdd89d2b') in 0.075515 seconds 
+  Import took 0.078970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Light Rain LQ.prefab
+  artifactKey: Guid(5d00af152b0756b4d958edc9145555c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Light Rain LQ.prefab using Guid(5d00af152b0756b4d958edc9145555c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bb84614c1ff6ed3b1cfd35edfb09fc') in 0.026466 seconds 
+  Import took 0.032678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Medium Rain LQ.prefab
+  artifactKey: Guid(eb00aa0efab163240b0100942689e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Medium Rain LQ.prefab using Guid(eb00aa0efab163240b0100942689e7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc0d9e0996e7220e69cc0e9f2bb2f28') in 0.023993 seconds 
+  Import took 0.040369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Light Snow LQ.prefab
+  artifactKey: Guid(07951236abb2b0e4b83fef1afffeab6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Light Snow LQ.prefab using Guid(07951236abb2b0e4b83fef1afffeab6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c35a0bdb155a088ee5ac575bb5afdd') in 0.024855 seconds 
+  Import took 0.029076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Storm LQ.prefab
+  artifactKey: Guid(35b265635b434fb4589078490426250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Lite/Prefabs/Particle Effects/Storm LQ.prefab using Guid(35b265635b434fb4589078490426250b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1ebfc995a38209400dfb520f431d3e4') in 0.023698 seconds 
+  Import took 0.038147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.695925 seconds.
+  path: Assets/Enviro - Sky and Weather/Enviro Standard
+  artifactKey: Guid(8a7204b8ba10f784e99e0ec96054fcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Enviro Standard using Guid(8a7204b8ba10f784e99e0ec96054fcda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4245a631b8a27ec03649b81cd09d9163') in 0.012481 seconds 
+  Import took 0.017010 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.089268 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 77.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  1.769 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1775ms)
+		BeginReloadAssembly (365ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (47ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (161ms)
+		EndReloadAssembly (1304ms)
+			LoadAssemblies (161ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (445ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (459ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Nature/SpeedTree7': dependency 'BillboardShader' shader 'Universal Render Pipeline/Nature/SpeedTree7 Billboard' not found
+Shader 'Universal Render Pipeline/Baked Lit': fallback shader 'Universal Render Pipeline/Unlit' not found
+Shader 'Universal Render Pipeline/Simple Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'AddPassShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' not found
+Shader 'Universal Render Pipeline/Terrain/Lit': dependency 'BaseMapGenShader' shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Basemap Gen)' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Hidden/Universal Render Pipeline/Terrain/Lit (Add Pass)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2935 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.4 MB.
+System memory in use after: 172.8 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3439.
+Total: 8.732500 ms (FindLiveObjects: 0.423600 ms CreateObjectMapping: 0.311900 ms MarkObjects: 3.593600 ms  DeleteObjects: 4.401400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2455.526510 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon02.brush
+  artifactKey: Guid(7ddc1e59f6e82cc4693b55b0badb4aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_canyon02.brush using Guid(7ddc1e59f6e82cc4693b55b0badb4aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77a28b7fdc5049434fd77173bb3d63c') in 0.313680 seconds 
+  Import took 0.321425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.060819 seconds.
+  path: Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain02.brush
+  artifactKey: Guid(8569f88df55a4b64b997e64b2aa69432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/Terrain Tools/0.1.0-preview/Terrain Assets/TerrainBrushes/terrainstamp_mountain02.brush using Guid(8569f88df55a4b64b997e64b2aa69432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079c20b57f4ef81528ea38e002b68ecf') in 0.029447 seconds 
+  Import took 0.035764 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.421 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1422ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1227ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (482ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (371ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (284ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2935 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 177.6 MB.
+System memory in use after: 173.0 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3445.
+Total: 20.069700 ms (FindLiveObjects: 1.415400 ms CreateObjectMapping: 0.447800 ms MarkObjects: 10.598100 ms  DeleteObjects: 7.605000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1524.099804 seconds.
+  path: Assets/Character
+  artifactKey: Guid(3463d0464c09bff45ac1646aa1e7d9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character using Guid(3463d0464c09bff45ac1646aa1e7d9d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517bd1d68827216a36d7e72e1f81987f') in 0.014162 seconds 
+  Import took 0.022562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.632650 seconds.
+  path: Assets/Character/Standing Idle.fbx
+  artifactKey: Guid(643d7d9abf0c6b04e8d5fad56074ddfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/Standing Idle.fbx using Guid(643d7d9abf0c6b04e8d5fad56074ddfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d42684aee5922d1611353e61f4e616') in 1.095641 seconds 
+  Import took 1.103205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 182.931981 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(e645c0024f5c4f843a2e526ef2c4513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(e645c0024f5c4f843a2e526ef2c4513e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2233211515f6eed910423f617a24a6d4') in 0.008019 seconds 
+  Import took 0.017241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.886591 seconds.
+  path: Assets/Terrains
+  artifactKey: Guid(50b7a3bb00c060f498b09b45381bbce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrains using Guid(50b7a3bb00c060f498b09b45381bbce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0a6ea38e71aa275df3d39a15f53442') in 0.006943 seconds 
+  Import took 0.015284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 267.422559 seconds.
+  path: Assets/Scripts/Player_movement.cs
+  artifactKey: Guid(d858f8f7f0f981f46a7457ab9879cbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player_movement.cs using Guid(d858f8f7f0f981f46a7457ab9879cbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8812ffafb80c38772a1f0ee62884d2c4') in 0.008329 seconds 
+  Import took 0.014099 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.053504 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 15.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 11.656 seconds
+Domain Reload Profiling:
+	ReloadAssembly (11688ms)
+		BeginReloadAssembly (1306ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (144ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (6ms)
+			CreateAndSetChildDomain (685ms)
+		EndReloadAssembly (10264ms)
+			LoadAssemblies (5148ms)
+			RebuildTransferFunctionScriptingTraits (12ms)
+			SetupTypeCache (2255ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (165ms)
+			SetupLoadedEditorAssemblies (1948ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (33ms)
+				RefreshPlugins (16ms)
+				BeforeProcessingInitializeOnLoad (407ms)
+				ProcessInitializeOnLoadAttributes (1452ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2936 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.7 MB.
+System memory in use after: 187.1 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3486.
+Total: 239.710900 ms (FindLiveObjects: 34.458300 ms CreateObjectMapping: 0.302800 ms MarkObjects: 195.946200 ms  DeleteObjects: 8.999400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.356 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1357ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (85ms)
+		EndReloadAssembly (1102ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (404ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (402ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2936 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3488.
+Total: 6.771800 ms (FindLiveObjects: 0.418400 ms CreateObjectMapping: 0.308300 ms MarkObjects: 3.378200 ms  DeleteObjects: 2.665400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004576 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.134 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1134ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (930ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (359ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (321ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2936 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.6 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3490.
+Total: 8.517700 ms (FindLiveObjects: 0.399400 ms CreateObjectMapping: 0.307500 ms MarkObjects: 3.634900 ms  DeleteObjects: 4.173800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2155.027971 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Materials/Weather/Enviro_Lightning_Strikes.mat
+  artifactKey: Guid(40dd725df3be8f74489b8de7495b290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Materials/Weather/Enviro_Lightning_Strikes.mat using Guid(40dd725df3be8f74489b8de7495b290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce8cec1e9bff9de4a1bb6a62a5e1d45') in 0.783842 seconds 
+  Import took 0.860820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.703274 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Clear Sky.asset
+  artifactKey: Guid(c48d65dacff7b1649820ff520a058338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Clear Sky.asset using Guid(c48d65dacff7b1649820ff520a058338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '473306d0d1700fd74295d5d01e7c7f5a') in 0.251364 seconds 
+  Import took 0.302755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Storm.asset
+  artifactKey: Guid(6f9d0931688880347bd9ad00e43b3fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Storm.asset using Guid(6f9d0931688880347bd9ad00e43b3fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3426bb3887460323d5d0a8cc7b1b02b7') in 0.145252 seconds 
+  Import took 0.178282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 3.asset
+  artifactKey: Guid(62c8e9ba3f8023a4eb9bdc4a5140a942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 3.asset using Guid(62c8e9ba3f8023a4eb9bdc4a5140a942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db3c6e8901c19c70b1c8f95ae44c7b8') in 0.033215 seconds 
+  Import took 0.077227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 4.asset
+  artifactKey: Guid(db89415d0b53b66459a76a02b2319b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 4.asset using Guid(db89415d0b53b66459a76a02b2319b21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945cca73e0ef9c135fb8acf3b92600a4') in 0.029028 seconds 
+  Import took 0.054749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Light Rain.asset
+  artifactKey: Guid(42e49e2754d7128429d41c49a27e16af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Light Rain.asset using Guid(42e49e2754d7128429d41c49a27e16af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df89c2da9d0e0672588d9cb8a68543a8') in 0.111158 seconds 
+  Import took 0.158485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Heavy Rain.asset
+  artifactKey: Guid(835941d5837045d4fba97cb40f870989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Heavy Rain.asset using Guid(835941d5837045d4fba97cb40f870989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca7b418c69193275be40b4be9c9afa7') in 0.147763 seconds 
+  Import took 0.176096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 1.asset
+  artifactKey: Guid(6524b8dacc08e22498c3e84ab332332e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 1.asset using Guid(6524b8dacc08e22498c3e84ab332332e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af82dd93fc71e792dbf767513fc8f9e0') in 0.053085 seconds 
+  Import took 0.084757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Heavy Snow.asset
+  artifactKey: Guid(d46c8a17654d659438ba9709fe9e1800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Heavy Snow.asset using Guid(d46c8a17654d659438ba9709fe9e1800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab686f28ef2a53e7bcc9b09742e0f6a') in 0.164282 seconds 
+  Import took 0.190830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000590 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Light Snow.asset
+  artifactKey: Guid(991b8305772f6b24297aaa3bb65c47c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Light Snow.asset using Guid(991b8305772f6b24297aaa3bb65c47c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1acd7db6617e709d84225a0fd94d524') in 0.064158 seconds 
+  Import took 0.092991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 2.asset
+  artifactKey: Guid(e745885f92615404e93cf9b7408fda9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Cloudy 2.asset using Guid(e745885f92615404e93cf9b7408fda9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd159b3a86dc082c3f1ebe70f0a039c69') in 0.028202 seconds 
+  Import took 0.063187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Foggy.asset
+  artifactKey: Guid(69485136906fd4c4db237cc9aecd7d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enviro - Sky and Weather/Core/Profiles/Weather Presets/Foggy.asset using Guid(69485136906fd4c4db237cc9aecd7d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf99a204d672f0753e8a6d89df7cff3') in 0.030635 seconds 
+  Import took 0.064526 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.082 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1082ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (894ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (348ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (303ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Enviro/Lite/SkyboxSimple': fallback shader 'None' not found
+Shader 'Enviro/Standard/SkyboxSimple': fallback shader 'None' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2936 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.7 MB.
+System memory in use after: 187.0 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 3493.
+Total: 7.382700 ms (FindLiveObjects: 0.553600 ms CreateObjectMapping: 0.310200 ms MarkObjects: 3.764200 ms  DeleteObjects: 2.753100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
