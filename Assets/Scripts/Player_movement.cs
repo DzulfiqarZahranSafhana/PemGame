@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
-    private float kecepatan =7f;
+    public float kecepatan =7f;
     public float x;
     public float z;
 
@@ -12,6 +13,7 @@ public class Player_movement : MonoBehaviour
     [SerializeField] private Transform groundcheck;
     [SerializeField] private float groundDistance = -0.4f;
     [SerializeField] private LayerMask groundMask;
+    [SerializeField] private float speed_jump = 3f;
     public bool isGrounded;
     Vector3 velocity;
     public float waktugerakHalus = 0.1f;
@@ -29,13 +31,14 @@ public class Player_movement : MonoBehaviour
     {
         gravity();
         bergerak();
+        lompat();
     }
 
     private void bergerak()
     {
-        x = Input.GetAxis("Horizontal");
-        z = Input.GetAxis("Vertical");
-        Vector3 gerakan = transform.right * x + transform.forward * z;
+        x = Input.GetAxisRaw("Horizontal");
+        z = Input.GetAxisRaw("Vertical");
+        Vector3 gerakan = new Vector3(x,0f,z).normalized;
         if (gerakan.magnitude >= 0.1f)
         {
             float arahtujuan = Mathf.Atan2(gerakan.x, gerakan.z)*Mathf.Rad2Deg;
@@ -56,6 +59,14 @@ public class Player_movement : MonoBehaviour
             velocity.y = -2f;
         }
 
+    }
+
+    private void lompat()
+    {
+        if (Input.GetButtonDown("Jump") && isGrounded) 
+        {
+            velocity.y = Mathf.Sqrt(speed_jump * -2f * gravitasi);
+        }
         velocity.y += gravitasi * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
