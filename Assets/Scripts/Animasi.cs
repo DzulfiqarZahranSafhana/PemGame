@@ -16,7 +16,7 @@ public class Animasi : MonoBehaviour
     void Start()
     {
         anim1 = GetComponentInChildren<Animator>();
-        player = GameObject.Find("Erika");
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame

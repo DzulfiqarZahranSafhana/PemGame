@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Player_movement : MonoBehaviour
 {
+    public Transform cam;
     public float kecepatan =7f;
     public float x;
     public float z;
+    public float y;
+    
 
     [SerializeField] private float gravitasi = -9.81f;
     [SerializeField] private Transform groundcheck;
@@ -41,11 +44,11 @@ public class Player_movement : MonoBehaviour
         Vector3 gerakan = new Vector3(x,0f,z).normalized;
         if (gerakan.magnitude >= 0.1f)
         {
-            float arahtujuan = Mathf.Atan2(gerakan.x, gerakan.z)*Mathf.Rad2Deg;
+            float arahtujuan = Mathf.Atan2(gerakan.x, gerakan.z)*Mathf.Rad2Deg + cam.eulerAngles.y;
             float arahhalus = Mathf.SmoothDampAngle(transform.eulerAngles.y, arahtujuan, ref kecgerakhalus, waktugerakHalus);
             transform.rotation = Quaternion.Euler(0f, arahhalus, 0f);
-            
-            controller.Move(gerakan * kecepatan * Time.deltaTime);
+            Vector3 moveDir = Quaternion.Euler(0f, arahtujuan, 0f) * Vector3.forward;
+            controller.Move(moveDir.normalized * kecepatan * Time.deltaTime);
         }
         
     }
