@@ -5,6 +5,7 @@ using UnityEngine;
 public class Kamera : MonoBehaviour
 {
     [SerializeField] private float sensitivity;
+    
 
     private Transform parent;
     // Start is called before the first frame update
@@ -12,6 +13,7 @@ public class Kamera : MonoBehaviour
     {
         parent = transform.parent;
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // Update is called once per frame
@@ -19,5 +21,6 @@ public class Kamera : MonoBehaviour
     {
         float mouseX = Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
         parent.Rotate(Vector3.up, mouseX);
+
     }
 }

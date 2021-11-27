@@ -370,7 +370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1803389084}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadSaveGame
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &57190784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -392,6 +404,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuButtonController: {fileID: 511954231}
+--- !u!84 &92255244
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 512
+  m_Height: 512
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &146871426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,6 +5077,42 @@ Transform:
   m_Father: {fileID: 734810222}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!84 &174019739
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 2048
+  m_Height: 2048
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthFormat: 0
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &242105340
 GameObject:
   m_ObjectHideFlags: 0
@@ -20946,31 +21030,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1546.9744
+      value: 35.161537
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -159.65341
+      value: -15.436295
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 660.3474
+      value: -79.84247
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.58078414
+      value: -0.92450094
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.019293167
+      value: 0.04594444
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8129935
+      value: -0.35353863
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402722, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.036867138
+      value: -0.1348982
       objectReference: {fileID: 0}
     - target: {fileID: 7771577062669402723, guid: 985faa0886ead5e478f7ab5e8e7d276d, type: 3}
       propertyPath: m_TargetTexture
@@ -21555,42 +21639,6 @@ Transform:
   m_Father: {fileID: 242105341}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &1260790780
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 512
-  m_Height: 512
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1267696206
 GameObject:
   m_ObjectHideFlags: 0
@@ -23804,11 +23852,11 @@ MonoBehaviour:
   LST: 761.6399
   lastHourUpdate: 20
   hourTime: 0
-  cloudAnim: {x: 0.1, y: 0.6650707, z: 0.9950611}
-  cloudFlatBaseAnim: {x: 0, y: -0.5440632}
-  cloudFlatDetailAnim: {x: 0, y: -0.17599389}
-  cloudAnimNonScaled: {x: 0, y: -0.5440632}
-  cirrusAnim: {x: 0, y: -0.23213218}
+  cloudAnim: {x: 0.1, y: 0.43611512, z: 0.6165205}
+  cloudFlatBaseAnim: {x: 0, y: -0.5669591}
+  cloudFlatDetailAnim: {x: 0, y: -0.26757607}
+  cloudAnimNonScaled: {x: 0, y: -0.5669591}
+  cirrusAnim: {x: 0, y: -0.2419011}
   windIntensity: 0.24999999
   shadowIntensityMod: 0
   interiorMode: 0
@@ -23944,9 +23992,9 @@ MonoBehaviour:
   auroraIntensity: 0
   currentActiveCloudsQualityPreset: {fileID: 11400000, guid: a836f7605a4cd2b46977d5caf63945fc, type: 2}
   cloudsRenderTarget: {fileID: 0}
-  weatherMap: {fileID: 1260790780}
+  weatherMap: {fileID: 92255244}
   satRenderTarget: {fileID: 0}
-  cloudShadowMap: {fileID: 1791304957}
+  cloudShadowMap: {fileID: 174019739}
   skyMat: {fileID: 2066685807}
   skyReflectionMat: {fileID: 0}
   cloudsQualityList:
@@ -24612,42 +24660,6 @@ Transform:
   m_Father: {fileID: 1461670184}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 67.0212, y: 447.7858, z: 0}
---- !u!84 &1791304957
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 3
-  m_Width: 2048
-  m_Height: 2048
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthFormat: 0
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1803389083
 GameObject:
   m_ObjectHideFlags: 0
@@ -24727,7 +24739,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25257,7 +25269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2066970979
 RectTransform:
   m_ObjectHideFlags: 0

@@ -6,17 +6,24 @@ using UnityEngine.UI;
 public class HUDManager : MonoBehaviour
 {
     public Image currentEnergy;
+    public Image currentHealth;
     public Text time;
     private GameObject Player;
     [SerializeField] GameObject pauseMenu;
+    private bool GameIsPaused = false;
+    public Player playerInstance;
 
     private float energy = 200;
     private float maxEnergy = 200;
+    private float player_health;
+    private float max_player_health = 100f;
     private float kecepatan;
     private float kecepatanLari;
     private float input_x;
     private float input_z;
-    private bool GameIsPaused = false;
+    
+
+    
     
     // Start is called before the first frame update
     void Start()
@@ -31,8 +38,10 @@ public class HUDManager : MonoBehaviour
         kecepatanLari = Player.GetComponent<Player_movement>().kecepatan;
         input_x = Player.GetComponent<Player_movement>().x;
         input_z = Player.GetComponent<Player_movement>().z;
+        player_health = Player.GetComponent<HealthSystem>().player_health;
         EnergyDrain();
         UpdateEnergy();
+        UpdateHealth();
         UpdateTime();
         ShowPauseMenu();
     }
@@ -49,6 +58,11 @@ public class HUDManager : MonoBehaviour
             { energy += 15 * Time.deltaTime; 
             }
          }     
+    }
+    private void UpdateHealth()
+    {
+        float ratio = player_health / max_player_health;
+        currentHealth.rectTransform.localScale = new Vector3(ratio, 1, 1);
     }
 
     private void UpdateEnergy()
@@ -114,5 +128,10 @@ public class HUDManager : MonoBehaviour
         GameIsPaused = true;
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    public void SaveGame()
+    {
+        SaveSystem.SavePlayer(playerInstance);
     }
 }

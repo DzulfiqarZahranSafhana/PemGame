@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Lighting
+  - Bracket
+  - Obstacle
   layers:
   - Default
   - TransparentFX

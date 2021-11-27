@@ -50,7 +50,6 @@ public class Player_movement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, arahtujuan, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * kecepatan * Time.deltaTime);
         }
-        
     }
 
     private void gravity()
