@@ -8,6 +8,9 @@ TagManager:
   - Lighting
   - Bracket
   - Obstacle
+  - Enemy
+  - Mushroom
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - UI
   - PostPro
   - Ground
-  - 
+  - Player
   - 
   - 
   - 

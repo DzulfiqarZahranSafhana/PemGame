@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     public float player_health = 100f;
+    public string info;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,22 @@ public class HealthSystem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Obstacle")
+        if (other.tag == "Mushroom")
         {
-            player_health -= 30f;
+            player_health -= 5f;
+            info = "You eat a poisonous mushroom";
+        }
 
+        if (other.tag == "Fire")
+        {
+            player_health -= 5f;
+            info = "You are burned";
+        }
+
+            if (other.tag == "Enemy")
+        {
+            player_health -= 15f;
+            info = "You are killed by spider";
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HUDManager : MonoBehaviour
 {
@@ -21,15 +22,18 @@ public class HUDManager : MonoBehaviour
     private float kecepatanLari;
     private float input_x;
     private float input_z;
-    
 
-    
-    
+    [SerializeField] GameObject Gameovermenu;
+    [SerializeField] GameObject Information;
+    string info;
+ 
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.Find("Player");
         kecepatanLari = Player.GetComponent<Player_movement>().kecepatan;
+        GameIsPaused = false;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -39,11 +43,16 @@ public class HUDManager : MonoBehaviour
         input_x = Player.GetComponent<Player_movement>().x;
         input_z = Player.GetComponent<Player_movement>().z;
         player_health = Player.GetComponent<HealthSystem>().player_health;
+        info = Player.GetComponent<HealthSystem>().info;
+        Text message = Information.GetComponent<Text>();
+        message.text = info; 
+
         EnergyDrain();
         UpdateEnergy();
         UpdateHealth();
         UpdateTime();
         ShowPauseMenu();
+        GameOver();
     }
 
     private void EnergyDrain()
@@ -122,12 +131,28 @@ public class HUDManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     void Pause()
     {
         pauseMenu.SetActive(true);
         GameIsPaused = true;
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    public void GameOver()
+    {
+       if (player_health < 1) {  
+        Gameovermenu.SetActive(true);
+        GameIsPaused =true;
+        Time.timeScale = 0f;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        }
     }
 
     public void SaveGame()
